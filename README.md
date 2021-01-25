@@ -1,6 +1,14 @@
 React Typescript template
 =============================
 
+This is a starter template for a React project with Typescript enabled. This does *NOT* use create-react-app, but is instead a more barebones template that exposes a basic babel/webpack setup. 
+
+The template is already set up to use Jest/RTL for testing and react-intl-hooks for localization. 
+
+Theming is purposefully left out for the user to decide (Material UI/Tailwind/Bootstrap/etc).
+
+Documentation references npm, but yarn may be used as well.
+
 - [React Typescript template](#react-typescript-template)
 - [Setup](#setup)
   - [Recommended Extensions for VSCode](#recommended-extensions-for-vscode)
@@ -9,6 +17,7 @@ React Typescript template
   - [`npm test`](#npm-test)
   - [`npm run build`](#npm-run-build)
   - [`npm run start`](#npm-run-start)
+- [Testing](#testing)
 - [Documentation and References](#documentation-and-references)
   - [Typescript](#typescript)
   - [Jest](#jest)
@@ -49,6 +58,10 @@ Creates static HTML/JS in dist folder
 ## `npm run start`
 
 Servers up the static build files in dist folder
+
+# Testing
+
+Take note of `src/utils/test-utils.tsx`. This file is used to setup unit tests to supply any providers to the unit tests. In this template, only `IntlProvider` is used, but others can be added as needed. See `App.test.tsx` or `SampleComponent.test.tsx` for examples on how it can be used.
 
 # Documentation and References
 
