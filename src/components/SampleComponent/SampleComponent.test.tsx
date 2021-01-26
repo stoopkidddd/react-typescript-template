@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 
-import { render, renderHook, RenderResult } from '../../utils/test-utils';
-import useLocalization from '../../hooks/useLocalization';
+import { render, renderHook, RenderResult } from '@utils/test-utils';
+import useLocalization from '@hooks/useLocalization/useLocalization';
 
 import SampleComponent from './SampleComponent';
 

@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": "src",
     "target": "es6",
     "module": "commonjs",
     "jsx": "react",
@@ -13,9 +14,12 @@
     "resolveJsonModule": true,
     "typeRoots": ["./types", "./node_modules/@types"],
     "paths": {
-      "test-utils": ["./utils/test-utils"]
+      "@utils/*": ["utils/*"],
+      "@components/*": ["components/*"],
+      "@hooks/*": ["hooks/*"],
+      "@translations/*": ["translations/*"]
     }
 
   },
-  "include": ["src", "__tests__"]
+  "include": ["src"]
 }

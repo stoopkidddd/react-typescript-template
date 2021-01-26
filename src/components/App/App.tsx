@@ -2,8 +2,9 @@ import React from 'react';
 
 import { IntlProvider } from 'react-intl-hooks';
 
-import locale_en from '../../translations/en.json';
-import SampleComponent from '../SampleComponent/SampleComponent';
+import SampleComponent from '@components/SampleComponent/SampleComponent';
+
+import locale_en from '@translations/en.json';
 
 const data = {
   en: locale_en,
